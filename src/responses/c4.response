@@ -1,0 +1,51 @@
+<COREF ID="X0">disease</COREF>
+{0} {disease}
+{1} {disease}
+{1} {disease}
+{1} {disease}
+{1} {disease}
+{1} {disease}
+{2} {disease}
+{2} {disease}
+{8} {disease}
+
+<COREF ID="X1">transplant</COREF>
+{0} {transplant}
+{7} {transplants}
+{8} {transplants}
+
+<COREF ID="X2">Trypanosoma cruzi</COREF>
+
+<COREF ID="X3">the United States</COREF>
+{3} {States}
+
+<COREF ID="X4">report</COREF>
+{3} {report}
+
+<COREF ID="X5">cases</COREF>
+{8} {cases}
+
+<COREF ID="X6">infection</COREF>
+{3} {infection}
+{4} {infection}
+{5} {Infection}
+
+<COREF ID="X7">organs</COREF>
+{3} {organs}
+{8} {organs}
+
+<COREF ID="X8">donor</COREF>
+{3} {donor}
+{4} {donors}
+{7} {donor}
+{8} {donor}
+
+<COREF ID="X9">The Centers for Disease Control and Prevention</COREF>
+{4} {Prevention}
+
+<COREF ID="X10">recipients</COREF>
+{5} {recipients}
+{5} {recipient}
+
+<COREF ID="X11">Mod.EP</COREF>
+
