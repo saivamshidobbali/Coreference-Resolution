@@ -1,0 +1,1465 @@
+<COREF ID="X0">GROUNDED-JETS</COREF>
+{2} {GROUNDED-JETS}
+
+<COREF ID="X1">02-22</COREF>
+{4} {02-22}
+
+<COREF ID="X2">NAVY</COREF>
+{6} {NAVY}
+{10} {Navy}
+{12} {Navy}
+{13} {Navy}
+{15} {Navy}
+{19} {Navy}
+{21} {personnel}
+{27} {Navy}
+{30} {Navy}
+{31} {Navy}
+{35} {Navy}
+{36} {Navy}
+
+<COREF ID="X3">THIRD RECENT CRASH</COREF>
+{6} {CRASH}
+{19} {crash}
+{24} {crashes}
+{30} {crash}
+
+<COREF ID="X4">entire fleet of F-14 airplanes</COREF>
+{10} {airplanes}
+{10} {airplanes}
+{12} {helicopter}
+{12} {aircraft}
+{19} {aircraft}
+{21} {aircraft}
+{32} {aircraft}
+{33} {aircraft}
+{33} {aircraft}
+
+<COREF ID="X5">Thursday</COREF>
+{10} {Thursday}
+{19} {Thursday}
+{26} {Thursday}
+
+<COREF ID="X6">The 72-hour ``safety stand-down''</COREF>
+{11} {stand-down''}
+
+<COREF ID="X7">an F-14 fighter</COREF>
+{11} {fighter}
+{31} {fighter}
+
+<COREF ID="X8">the two Naval aviators on board</COREF>
+{12} {aviators}
+{12} {board}
+
+<COREF ID="X9">Defense Department spokesman Kenneth Bacon</COREF>
+{19} {Bacon}
+{19} {Bacon}
+{24} {Bacon}
+{26} {Bacon}
+{27} {Bacon}
+{36} {Bacon}
+
+<COREF ID="X10">A safety stand-down</COREF>
+{11} {stand-down}
+{20} {stand-down}
+{25} {stand-down}
+{26} {standdown}
+
+<COREF ID="X11">the USS America</COREF>
+{22} {USS}
+{22} {America}
+{22} {America}
+
+<COREF ID="X12">Carrier</COREF>
+{16} {carrier}
+{22} {carrier}
+{23} {Carrier}
+{29} {carrier}
+
+<COREF ID="X13">these three crashes this year</COREF>
+{19} {year}
+{21} {period}
+{24} {year}
+
+<COREF ID="X14">Adm. Jeremy Boorda</COREF>
+{26} {Boorda}
+
+<COREF ID="X15">Deputy Defense Secretary John White</COREF>
+{26} {White}
+
+<COREF ID="X16">One</COREF>
+{29} {one}
+{29} {One}
+
+<COREF ID="X17">The oldest version of the aircraft</COREF>
+{10} {airplanes}
+{10} {airplanes}
+{12} {helicopter}
+{12} {aircraft}
+{19} {aircraft}
+{21} {aircraft}
+{32} {aircraft}
+{33} {aircraft}
+{33} {aircraft}
+
+<COREF ID="X18">the initial years of deployment</COREF>
+{22} {deployment}
+{34} {deployment}
+{34} {deployment}
+
+<COREF ID="X19">This</COREF>
+{37} {This}
+
+<COREF ID="X0">F14-CRASH</COREF>
+{2} {F14-CRASH}
+
+<COREF ID="X1">02-22</COREF>
+{4} {02-22}
+
+<COREF ID="X2">SERIES OF CRASHES</COREF>
+{6} {CRASHES}
+{14} {crash}
+{16} {crashes}
+{27} {crashes}
+{34} {crashes}
+{40} {crash}
+
+<COREF ID="X3">NAVY</COREF>
+{6} {NAVY}
+{13} {Navy}
+{30} {Navy}
+{33} {Navy}
+{41} {Navy}
+
+<COREF ID="X4">ITS F-14S</COREF>
+{6} {F-14S}
+{13} {F-14s}
+
+<COREF ID="X5">one of them</COREF>
+{13} {them}
+{13} {them}
+
+<COREF ID="X6">Thursday</COREF>
+{13} {Thursday}
+{38} {Thursday}
+
+<COREF ID="X7">the Persian Gulf</COREF>
+{13} {Gulf}
+{14} {gulf}
+{38} {Gulf}
+{38} {gulf}
+
+<COREF ID="X8">The two-man crew</COREF>
+{14} {crew}
+{14} {crew}
+{35} {crew}
+
+<COREF ID="X9">the carrier Nimitz</COREF>
+{14} {Nimitz}
+
+<COREF ID="X10">The three-day shutdown</COREF>
+{16} {shutdown}
+{27} {shutdown}
+
+<COREF ID="X11">the chief of naval operations</COREF>
+{16} {operations}
+{16} {operations}
+
+<COREF ID="X12">the earlier models</COREF>
+{20} {models}
+{28} {models}
+{29} {model}
+{32} {models}
+
+<COREF ID="X13">Navy officials</COREF>
+{27} {officials}
+{27} {officials}
+{39} {officials}
+
+<COREF ID="X14">the engines</COREF>
+{29} {engines}
+{30} {engines}
+{32} {engines}
+
+<COREF ID="X15">Two of the three planes that have crashed since late January</COREF>
+{13} {month}
+{31} {January}
+{31} {January}
+
+<COREF ID="X16">later models</COREF>
+{20} {models}
+{28} {models}
+{29} {model}
+{32} {models}
+
+<COREF ID="X17">an F-14D</COREF>
+{13} {F-14}
+{32} {F-14D}
+{34} {F-14A}
+{37} {F-14D}
+
+<COREF ID="X0">NTSB</COREF>
+{2} {NTSB}
+{21} {NTSB}
+{24} {NTSB}
+
+<COREF ID="X1">CRASH</COREF>
+{2} {CRASH}
+{18} {crash}
+{19} {crash}
+{24} {crash}
+
+<COREF ID="X2">02-27</COREF>
+{4} {02-27}
+
+<COREF ID="X3">737</COREF>
+{6} {737}
+{10} {737}
+{18} {737}
+
+<COREF ID="X4">CRASH PROBE</COREF>
+{6} {PROBE}
+{10} {investigation}
+{14} {investigation}
+{18} {tests}
+{21} {tests}
+{22} {tests}
+{23} {tests}
+{24} {tests}
+
+<COREF ID="X5">SEATTLE</COREF>
+{10} {'s}
+{10} {Pittsburgh}
+{10} {SEATTLE}
+
+<COREF ID="X6">Seattle's Museum of Flight</COREF>
+{10} {Flight}
+{10} {Flight}
+{18} {flight}
+
+<COREF ID="X7">a similar jetliner</COREF>
+{10} {jetliner}
+{11} {airplane}
+{18} {plane}
+{20} {plane}
+{21} {plane}
+{24} {plane}
+
+<COREF ID="X8">Pittsburgh</COREF>
+{10} {Pittsburgh}
+{10} {SEATTLE}
+
+<COREF ID="X9">the plane's rudder</COREF>
+{12} {rudder}
+{13} {rudder}
+{15} {rudder}
+{17} {rudder}
+
+<COREF ID="X10">Aviation safety investigators</COREF>
+{13} {investigators}
+
+<COREF ID="X11">the rudder</COREF>
+{12} {rudder}
+{13} {rudder}
+{15} {rudder}
+{17} {rudder}
+
+<COREF ID="X12">NTSB Chairman Jim Hall</COREF>
+{14} {Hall}
+{14} {Hall}
+{14} {Hall}
+
+<COREF ID="X13">board spokesman Mike Benson</COREF>
+{14} {Benson}
+{14} {Benson}
+{18} {Benson}
+
+<COREF ID="X14">Newer models of flight data recorders</COREF>
+{17} {recorders}
+{19} {recorders}
+
+<COREF ID="X15">the angle of the rudder and the pedal controlling it</COREF>
+{16} {It}
+{17} {it}
+{17} {it}
+
+<COREF ID="X16">tests</COREF>
+{6} {PROBE}
+{10} {investigation}
+{14} {investigation}
+{18} {tests}
+{21} {tests}
+{22} {tests}
+{23} {tests}
+{24} {tests}
+
+<COREF ID="X17">last September</COREF>
+{20} {September}
+{20} {September}
+{24} {September}
+
+<COREF ID="X0">PANTEX</COREF>
+{2} {PANTEX}
+{14} {Pantex}
+{21} {pantex}
+
+<COREF ID="X1">FLIGHTS</COREF>
+{2} {FLIGHTS}
+{6} {FLIGHTS}
+{12} {flight}
+{16} {flight}
+{25} {flight}
+{27} {flight}
+{29} {flight}
+
+<COREF ID="X2">02-14</COREF>
+{3} {02-14}
+
+<COREF ID="X3">FAA</COREF>
+{6} {FAA}
+{12} {FAA}
+
+<COREF ID="X4">NUMBER OF FLIGHTS</COREF>
+{2} {FLIGHTS}
+{6} {FLIGHTS}
+{12} {flight}
+{16} {flight}
+{25} {flight}
+{27} {flight}
+{29} {flight}
+
+<COREF ID="X5">PLUTONIUM</COREF>
+{6} {PLUTONIUM}
+{11} {plutonium}
+{14} {plutonium}
+{15} {plutonium}
+{20} {plutonium}
+{24} {he}
+{25} {plutonium}
+{26} {he}
+{28} {he}
+{29} {he}
+
+<COREF ID="X6">1996</COREF>
+{10} {1996}
+
+<COREF ID="X7">Amarillo</COREF>
+{11} {Amarillo}
+{17} {Amarillo}
+{29} {Amarillo}
+
+<COREF ID="X8">Texas</COREF>
+{11} {Texas}
+{17} {me}
+{24} {Texas}
+{24} {Oklahoma}
+{24} {Kansas}
+{32} {Oklahoma}
+
+<COREF ID="X9">Energy Department</COREF>
+{11} {Department}
+{11} {Department}
+{21} {Department}
+
+<COREF ID="X10">each flight</COREF>
+{2} {FLIGHTS}
+{6} {FLIGHTS}
+{12} {flight}
+{16} {flight}
+{25} {flight}
+{27} {flight}
+{29} {flight}
+
+<COREF ID="X11">Amarillo International Airport</COREF>
+{12} {Airport}
+{13} {Facilities}
+{17} {airport}
+{19} {International}
+{25} {airport}
+{29} {Airport}
+
+<COREF ID="X12">military training planes</COREF>
+{13} {training}
+{13} {planes}
+{18} {planes}
+{20} {planes}
+{24} {aircraft}
+{24} {planes}
+{24} {aircraft}
+{31} {planes}
+{32} {plane}
+
+<COREF ID="X13">Defense Nuclear Facilities Safety Board</COREF>
+{13} {Board}
+{16} {board}
+
+<COREF ID="X14">The risk of that scenario</COREF>
+{16} {scenario}
+{16} {scenario}
+
+<COREF ID="X15">me</COREF>
+{11} {Texas}
+{17} {me}
+{24} {Texas}
+{24} {Oklahoma}
+{24} {Kansas}
+{32} {Oklahoma}
+
+<COREF ID="X16">land near the plant</COREF>
+{11} {Plant}
+{13} {plant}
+{17} {plant}
+{17} {plant}
+{22} {plant}
+{32} {plant}
+
+<COREF ID="X17">Mike McNulty</COREF>
+{19} {McNulty}
+{19} {McNulty}
+{23} {McNulty}
+{25} {McNulty}
+{27} {McNulty}
+{32} {McNulty}
+
+<COREF ID="X18">the previous aircraft count</COREF>
+{19} {count}
+{19} {count}
+
+<COREF ID="X19">air traffic controllers</COREF>
+{19} {controllers}
+
+<COREF ID="X20">flight patterns</COREF>
+{20} {patterns}
+
+<COREF ID="X21">About half the aircraft</COREF>
+{13} {planes}
+{18} {planes}
+{20} {planes}
+{24} {aircraft}
+{24} {planes}
+{24} {aircraft}
+{31} {planes}
+{32} {plane}
+
+<COREF ID="X22">Oklahoma</COREF>
+{11} {Texas}
+{17} {me}
+{24} {Texas}
+{24} {Oklahoma}
+{24} {Kansas}
+{32} {Oklahoma}
+
+<COREF ID="X23">plutonium storage bunkers</COREF>
+{14} {bunker}
+{20} {bunkers}
+{25} {bunkers}
+{25} {bunkers}
+{26} {bunkers}
+
+<COREF ID="X24">sophisticated equipment</COREF>
+{22} {ball}
+{28} {system}
+{29} {equipment}
+
+<COREF ID="X25">some military traffic</COREF>
+{19} {traffic}
+{26} {traffic}
+{31} {traffic}
+
+<COREF ID="X26">They</COREF>
+{32} {They}
+{33} {They}
+
+<COREF ID="X0">F14-CRASHES</COREF>
+{2} {F14-CRASHES}
+
+<COREF ID="X1">02-22</COREF>
+{4} {02-22}
+
+<COREF ID="X2">NORTHROP GRUMMAN F-14S</COREF>
+{6} {F-14S}
+{17} {F-14s}
+{18} {F-14s}
+{22} {F-14s}
+{29} {Grumman}
+{30} {Grumman}
+
+<COREF ID="X3">Bloomberg Business News</COREF>
+{9} {News}
+{17} {information}
+
+<COREF ID="X4">Navy</COREF>
+{10} {Navy}
+{10} {Navy}
+{12} {Navy}
+{16} {Navy}
+{17} {Navy}
+{22} {Navy}
+{26} {Navy}
+{30} {Navy}
+{31} {Navy}
+
+<COREF ID="X5">three days</COREF>
+{10} {days}
+{32} {days}
+
+<COREF ID="X6">Persian Gulf</COREF>
+{11} {Gulf}
+{11} {Gulf}
+{18} {Gulf}
+
+<COREF ID="X7">a 72-hour safety standdown</COREF>
+{16} {standdown}
+{18} {standdown}
+
+<COREF ID="X8">Lt. Greg Geisen</COREF>
+{16} {Geisen}
+{16} {Geisen}
+{18} {Geisen}
+{27} {Geisen}
+{28} {Geisen}
+{32} {Geisen}
+
+<COREF ID="X9">the F-14</COREF>
+{17} {F-14}
+{20} {F14}
+{30} {F-14}
+
+<COREF ID="X10">14 F-14s on board the USS America</COREF>
+{18} {USS}
+{18} {America}
+{18} {America}
+
+<COREF ID="X11">Pratt @amp; Whitney</COREF>
+{24} {Whitney}
+
+<COREF ID="X12">F-14 32 crashes since 1991</COREF>
+{26} {1991}
+{26} {1991}
+
+<COREF ID="X13">the mid 1970s</COREF>
+{28} {1970s}
+
+<COREF ID="X14">Grumman Corp.</COREF>
+{10} {Corp.}
+{29} {Corp.}
+
+<COREF ID="X15">Northrop Grumman spokesman John Vosilla</COREF>
+{30} {Vosilla}
+
+<COREF ID="X0">Mediator</COREF>
+{1} {Mediator}
+{8} {mediator}
+{9} {mediator}
+
+<COREF ID="X1">Talks</COREF>
+{1} {Talks}
+{1} {Talks}
+{9} {talks}
+{12} {Mediation}
+
+<COREF ID="X2">Big Board</COREF>
+{2} {Board}
+{11} {Board}
+{11} {Board}
+
+<COREF ID="X3">Union</COREF>
+{2} {Union}
+{12} {union}
+{13} {union}
+
+<COREF ID="X4">a Big Board spokesman</COREF>
+{9} {spokesman}
+{10} {spokesman}
+
+<COREF ID="X5">New York Futures Exchange, </COREF>
+{11} {Exchange,}
+
+<COREF ID="X0">Eastern Air</COREF>
+{1} {Air}
+{7} {Airlines}
+
+<COREF ID="X1">Date For Talks on Pay-Cut Plan</COREF>
+{1} {Plan}
+{1} {Plan}
+
+<COREF ID="X2">union</COREF>
+{7} {union}
+{9} {unions}
+{12} {unions}
+
+<COREF ID="X3">wage reductions</COREF>
+{7} {reductions}
+
+<COREF ID="X4">Union representatives who could be reached</COREF>
+{8} {reached}
+
+<COREF ID="X5">Philip Bakes</COREF>
+{10} {Bakes}
+
+<COREF ID="X6">one union official</COREF>
+{12} {official}
+
+<COREF ID="X7">Robert Callahan</COREF>
+{13} {Callahan}
+{14} {Callahan}
+
+<COREF ID="X8">Eastern's parent</COREF>
+{13} {parent}
+
+<COREF ID="X0">American Airlines</COREF>
+{1} {Airlines}
+{10} {Airlines}
+
+<COREF ID="X1">Mediation In Its Union Talks</COREF>
+{2} {Mediation}
+{2} {Talks}
+{2} {Talks}
+{10} {mediation}
+{10} {talks}
+{11} {talks}
+{11} {mediation}
+{12} {negotiations}
+{12} {talks}
+{13} {mediation}
+{14} {talks}
+{14} {mediation}
+{15} {negotiations}
+{17} {negotiations}
+{19} {arbitration}
+
+<COREF ID="X2">pilots</COREF>
+{10} {pilots}
+{10} {pilots}
+{12} {pilots}
+
+<COREF ID="X3">flight attendants</COREF>
+{10} {attendants}
+{10} {attendants}
+{12} {attendants}
+{13} {Attendants}
+
+<COREF ID="X4">The president</COREF>
+{13} {president}
+{13} {president}
+{14} {president}
+
+<COREF ID="X5">the request for mediation</COREF>
+{2} {Mediation}
+{2} {Talks}
+{2} {Talks}
+{10} {mediation}
+{10} {talks}
+{11} {talks}
+{11} {mediation}
+{12} {negotiations}
+{12} {talks}
+{13} {mediation}
+{14} {talks}
+{14} {mediation}
+{15} {negotiations}
+{17} {negotiations}
+{19} {arbitration}
+
+<COREF ID="X6">talks with the company</COREF>
+{11} {company}
+{14} {company}
+{14} {company}
+{17} {company}
+{20} {company}
+{22} {company}
+{22} {company}
+{25} {company}
+{26} {company}
+
+<COREF ID="X7">The major outstanding</COREF>
+{15} {outstanding}
+
+<COREF ID="X8">The union</COREF>
+{16} {union}
+{16} {union}
+{20} {union}
+{20} {union}
+{21} {union}
+{22} {union}
+{24} {union}
+{25} {union}
+{26} {union}
+
+<COREF ID="X9">the two sides</COREF>
+{19} {sides}
+{19} {sides}
+
+<COREF ID="X10">a 30-day cooling-off period</COREF>
+{12} {months}
+{12} {months}
+{19} {period}
+{25} {year}
+
+<COREF ID="X11">the union</COREF>
+{16} {union}
+{16} {union}
+{20} {union}
+{20} {union}
+{21} {union}
+{22} {union}
+{24} {union}
+{25} {union}
+{26} {union}
+
+<COREF ID="X12">a corporate campaign</COREF>
+{22} {campaign}
+{23} {campaign}
+{25} {Inc.}
+
+<COREF ID="X13">a union</COREF>
+{16} {union}
+{16} {union}
+{20} {union}
+{20} {union}
+{21} {union}
+{22} {union}
+{24} {union}
+{25} {union}
+{26} {union}
+
+<COREF ID="X14">a company</COREF>
+{11} {company}
+{14} {company}
+{14} {company}
+{17} {company}
+{20} {company}
+{22} {'s}
+{22} {company}
+{22} {company}
+{25} {company}
+{26} {company}
+
+<COREF ID="X15">Ray Rogers of Corporate Campaign Inc.</COREF>
+{25} {Inc.}
+{25} {Inc.}
+
+<COREF ID="X16">Geo. A. Hormel @amp; Co.</COREF>
+{25} {Co.}
+
+<COREF ID="X0">TWA</COREF>
+{1} {TWA}
+{14} {TWA}
+{15} {TWA}
+{18} {TWA}
+{21} {TWA}
+{24} {TWA}
+{24} {TWA}
+{39} {TWA}
+{42} {TWA}
+{52} {TWA}
+{58} {TWA}
+
+<COREF ID="X1">More</COREF>
+{2} {More}
+
+<COREF ID="X2">USAir</COREF>
+{2} {USAir}
+{11} {USAir}
+{12} {USAir}
+{14} {USAir}
+{18} {USAir}
+{21} {USAir}
+{21} {USAir}
+{22} {USAir}
+{23} {USAir}
+{24} {USAir}
+{26} {USAir}
+{26} {USAir}
+{28} {USAir}
+{29} {USAir}
+{31} {USAir}
+{35} {USAir}
+{41} {USAir}
+{44} {USAir}
+{51} {USAir}
+{51} {USAir}
+{52} {USAir}
+{56} {USAir}
+{58} {USAir}
+
+<COREF ID="X3">Additional Blow to Bid</COREF>
+{2} {Blow}
+{2} {Bid}
+{2} {Bid}
+{10} {order}
+{10} {order}
+{11} {order}
+{12} {offer}
+{12} {offer}
+{21} {bid}
+{25} {bid}
+{29} {bid}
+{53} {injunction}
+
+<COREF ID="X4">a temporary restraining order</COREF>
+{2} {Bid}
+{2} {Bid}
+{10} {order}
+{10} {order}
+{11} {order}
+{21} {bid}
+{25} {bid}
+{29} {bid}
+{53} {injunction}
+
+<COREF ID="X5">Piedmont Aviation Inc.</COREF>
+{12} {Inc.}
+{17} {Inc.}
+
+<COREF ID="X6">share tender offer</COREF>
+{2} {Bid}
+{2} {Bid}
+{12} {offer}
+{12} {offer}
+{21} {bid}
+{22} {tender-offer}
+{25} {bid}
+{29} {bid}
+
+<COREF ID="X7">Carl C. Icahn</COREF>
+{14} {Icahn}
+{14} {Icahn}
+{15} {Icahn}
+{16} {Icahn}
+{17} {Icahn}
+{23} {Icahn}
+{24} {Icahn}
+{25} {Icahn}
+{26} {Icahn}
+{27} {Icahn}
+{28} {Icahn}
+{29} {Icahn}
+{30} {Icahn}
+{33} {Icahn}
+{34} {Icahn}
+{36} {Icahn}
+{39} {Icahn}
+{43} {Icahn}
+{54} {Icahn}
+{55} {Icahn}
+{56} {Icahn}
+
+<COREF ID="X8">its attempt</COREF>
+{14} {attempt}
+{16} {attempt}
+
+<COREF ID="X9">Louis Marckesano, </COREF>
+{17} {Marckesano}
+{17} {Marckesano,}
+
+<COREF ID="X10">second application</COREF>
+{18} {application}
+{19} {application}
+{19} {application}
+{20} {application}
+{58} {application}
+{58} {application}
+
+<COREF ID="X11">Department of Transportation</COREF>
+{18} {Transportation}
+
+<COREF ID="X12">TWA's first application</COREF>
+{18} {application}
+{19} {application}
+{19} {application}
+{20} {application}
+{58} {application}
+{58} {application}
+
+<COREF ID="X13">TWA's bid</COREF>
+{2} {Bid}
+{2} {Bid}
+{10} {order}
+{10} {order}
+{11} {order}
+{12} {offer}
+{12} {offer}
+{21} {bid}
+{25} {bid}
+{29} {bid}
+{53} {injunction}
+
+<COREF ID="X14">Securities and Exchange Commission</COREF>
+{22} {Commission}
+{22} {Commission}
+
+<COREF ID="X15">The filings</COREF>
+{20} {filing}
+{23} {filings}
+{23} {filings}
+{24} {filings}
+{45} {filing}
+{50} {filing}
+
+<COREF ID="X16">Edwin I. Colodny, </COREF>
+{23} {Colodny,}
+
+<COREF ID="X17">merger between Piedmont and USAir</COREF>
+{2} {USAir}
+{11} {USAir}
+{12} {USAir}
+{14} {USAir}
+{18} {USAir}
+{21} {USAir}
+{21} {USAir}
+{22} {USAir}
+{23} {USAir}
+{24} {USAir}
+{26} {USAir}
+{26} {USAir}
+{28} {USAir}
+{29} {USAir}
+{31} {USAir}
+{35} {USAir}
+{41} {USAir}
+{44} {USAir}
+{51} {USAir}
+{51} {USAir}
+{52} {USAir}
+{56} {USAir}
+{58} {USAir}
+
+<COREF ID="X18">TWA</COREF>
+{1} {TWA}
+{14} {TWA}
+{15} {TWA}
+{18} {TWA}
+{21} {TWA}
+{24} {TWA}
+{24} {TWA}
+{39} {TWA}
+{42} {TWA}
+{52} {TWA}
+{58} {TWA}
+
+<COREF ID="X19">down $2.50</COREF>
+{38} {$2.50}
+
+<COREF ID="X20">its SEC filing</COREF>
+{20} {filing}
+{23} {filings}
+{23} {filings}
+{24} {filings}
+{45} {filing}
+{50} {filing}
+
+<COREF ID="X21">New York-based Manufacturers Hanover Trust Co.</COREF>
+{46} {Co.}
+
+<COREF ID="X22">William R. Howard, </COREF>
+{51} {Howard}
+{51} {Howard,}
+
+<COREF ID="X23">court in Pittsburgh</COREF>
+{10} {Pittsburgh}
+{12} {Winston-Salem}
+{47} {Hanover}
+{50} {Winston-Salem}
+{52} {Pittsburgh}
+{52} {Pittsburgh}
+
+<COREF ID="X24">more USAir stock</COREF>
+{12} {stock}
+{38} {stock}
+{40} {stock}
+{52} {stock}
+{53} {stock}
+{54} {stock}
+{58} {stock}
+
+<COREF ID="X25">Hart-Scott-Rodino Act</COREF>
+{22} {document}
+{25} {documents}
+{26} {documents}
+{44} {documents}
+{54} {Act}
+{54} {Act}
+{56} {affidavit}
+
+<COREF ID="X26">Houston-based Texas Air Corp.</COREF>
+{59} {Corp.}
+{59} {Corp.}
+
+<COREF ID="X0">senior director of UAL</COREF>
+{6} {director}
+{6} {UAL}
+{6} {UAL}
+{16} {UAL}
+{16} {UAL}
+{26} {UAL}
+{27} {UAL}
+
+<COREF ID="X1">its board</COREF>
+{6} {committee}
+{6} {board}
+{7} {board}
+{22} {board}
+
+<COREF ID="X2">the Journal's April 17 article</COREF>
+{6} {article}
+{6} {article}
+{8} {article}
+{14} {article}
+
+<COREF ID="X3">Richard Ferris</COREF>
+{6} {Ferris}
+{7} {Ferris}
+{9} {Ferris}
+{14} {Ferris}
+{22} {Ferris}
+
+<COREF ID="X4">United</COREF>
+{7} {United}
+{14} {United}
+{18} {United}
+{20} {United}
+{21} {.}
+
+<COREF ID="X5">the premier hotel company</COREF>
+{7} {company}
+{7} {company}
+
+<COREF ID="X6">car rental company</COREF>
+{7} {company}
+{7} {company}
+
+<COREF ID="X7">board members</COREF>
+{6} {member}
+{8} {members}
+
+<COREF ID="X8">the earnings of United Airlines</COREF>
+{9} {Airlines}
+{9} {Airlines}
+{11} {airline}
+{13} {airline}
+
+<COREF ID="X9">Jim Hartigan, </COREF>
+{12} {Hartigan,}
+
+<COREF ID="X10">independent legal and financial counsel</COREF>
+{14} {counsel}
+{15} {counsel}
+
+<COREF ID="X11">Donald Trump</COREF>
+{16} {'s}
+{16} {Trump}
+
+<COREF ID="X12">the Century Plaza Hotel in Los Angeles</COREF>
+{16} {Angeles}
+{16} {Angeles}
+
+<COREF ID="X13">the "570 newly hired pilots" whom United "tried to fire" because they "refused to cross picket lines. "</COREF>
+{17} {"}
+
+<COREF ID="X14">the pilots' strike</COREF>
+{17} {strike}
+{18} {strike}
+{19} {strike}
+{23} {strike}
+
+<COREF ID="X15">a federal district court</COREF>
+{19} {court}
+{20} {Court}
+{20} {court}
+
+<COREF ID="X16">the pilots</COREF>
+{14} {'}
+{18} {'}
+{20} {pilots}
+{21} {pilots}
+{22} {pilots}
+{24} {pilots}
+
+<COREF ID="X17">harsh things</COREF>
+{23} {things}
+
+<COREF ID="X18">we</COREF>
+{10} {we}
+{11} {we}
+{23} {we}
+{24} {we}
+{24} {we}
+{25} {we}
+
+<COREF ID="X0">Minnesota</COREF>
+{2} {Minnesota}
+{9} {'s}
+{10} {'s}
+{13} {Minnesota}
+{15} {Minnesota}
+{15} {Minnesota}
+{18} {states}
+{18} {Minnesota}
+{24} {Minnesota}
+
+<COREF ID="X1">Mediation</COREF>
+{2} {Mediation}
+{7} {Mediation}
+{8} {mediation}
+{11} {mediations}
+{12} {mediations}
+{16} {mediation}
+
+<COREF ID="X2">I</COREF>
+{7} {I}
+{9} {I}
+
+<COREF ID="X3">your May 5 article</COREF>
+{7} {article}
+{20} {article}
+
+<COREF ID="X4">Farm-Debt Mediation</COREF>
+{2} {Mediation}
+{7} {Mediation}
+{8} {mediation}
+{11} {mediations}
+{12} {mediations}
+{16} {mediation}
+
+<COREF ID="X5">the most devastating crash in the farm economy since the Great Depression</COREF>
+{8} {Depression}
+{8} {Depression}
+
+<COREF ID="X6">Minnesota's mediation program</COREF>
+{9} {program}
+{15} {program}
+
+<COREF ID="X7">creditors</COREF>
+{10} {creditors}
+
+<COREF ID="X8">farmers</COREF>
+{14} {farmers}
+{18} {farmers}
+{23} {farmers}
+
+<COREF ID="X9">the University of Minnesota</COREF>
+{2} {Minnesota}
+{13} {Minnesota}
+{15} {Minnesota}
+{15} {Minnesota}
+{18} {states}
+{18} {Minnesota}
+{24} {Minnesota}
+
+<COREF ID="X10">Chapter 12</COREF>
+{11} {24}
+{17} {12}
+
+<COREF ID="X11">various amendments to the Mediation Act</COREF>
+{19} {Act}
+{19} {Act}
+
+<COREF ID="X12">The program's record</COREF>
+{19} {notes}
+{22} {record}
+
+<COREF ID="X0">NBC</COREF>
+{1} {NBC}
+{8} {NBC}
+{9} {NBC}
+{11} {NBC}
+{13} {NBC}
+
+<COREF ID="X1">Contract Offer</COREF>
+{1} {Offer}
+{1} {Offer}
+
+<COREF ID="X2">Strike</COREF>
+{2} {Strike}
+{10} {strike}
+{10} {strike}
+
+<COREF ID="X3">its technicians and news employees union</COREF>
+{7} {union}
+{11} {union}
+
+<COREF ID="X4">the union's 2,800 NBC members</COREF>
+{8} {members}
+{8} {members}
+{10} {members}
+
+<COREF ID="X5">John Krieger, </COREF>
+{9} {Krieger}
+{9} {Krieger,}
+
+<COREF ID="X0">Western Union Corp.</COREF>
+{2} {Corp.}
+{6} {Corp.}
+{6} {Union}
+
+<COREF ID="X1">its subsidiary, </COREF>
+{6} {subsidiary}
+{6} {subsidiary,}
+
+<COREF ID="X2">labor contracts</COREF>
+{6} {contracts}
+{7} {contracts}
+{8} {agreement}
+{8} {contracts}
+{8} {agreement}
+
+<COREF ID="X3">the United Telegraph Workers and the Communications Workers of America</COREF>
+{6} {America}
+{6} {America}
+{12} {America}
+
+<COREF ID="X4">The agreement</COREF>
+{6} {contracts}
+{7} {contracts}
+{8} {agreement}
+{8} {contracts}
+{8} {agreement}
+
+<COREF ID="X0">Chrysler</COREF>
+{1} {Chrysler}
+{31} {Chrysler}
+{32} {'s}
+{33} {chrysler}
+{35} {Chrysler}
+{39} {Chrysler}
+{50} {'s}
+{51} {Chrysler}
+
+<COREF ID="X1">New Canadian Contract Offer</COREF>
+{2} {Offer}
+{13} {offer}
+{23} {offer}
+{26} {offer}
+
+<COREF ID="X2">Walkout</COREF>
+{4} {Walkout}
+{34} {strike}
+{37} {strike}
+
+<COREF ID="X3">Weekend</COREF>
+{5} {Weekend}
+
+<COREF ID="X4">Ford Talks With UAW</COREF>
+{5} {With}
+{5} {UAW}
+
+<COREF ID="X5">09/17/87</COREF>
+{9} {09/17/87}
+
+<COREF ID="X6">Striking auto workers</COREF>
+{13} {workers}
+{13} {workers}
+{23} {Workers}
+{32} {workers}
+{32} {workers}
+{34} {workers}
+{37} {workers}
+{37} {workers}
+{38} {workers}
+{45} {workers}
+{46} {workers}
+
+<COREF ID="X7">Chrysler Corp.'s Canadian unit</COREF>
+{13} {unit}
+{13} {unit}
+
+<COREF ID="X8">negotiations</COREF>
+{13} {negotiations}
+{18} {talks}
+{21} {negotiations}
+{24} {talks}
+{40} {talks}
+{40} {talks}
+{41} {talks}
+{49} {negotiations}
+
+<COREF ID="X9">yesterday</COREF>
+{13} {yesterday}
+{13} {yesterday}
+{14} {yesterday}
+{15} {day}
+{18} {day}
+{25} {yesterday}
+{28} {yesterday}
+{30} {yesterday}
+{35} {yesterday}
+{41} {yesterday}
+{51} {yesterday}
+
+<COREF ID="X10">Ford Motor Co.</COREF>
+{14} {Co.}
+{39} {Co.}
+
+<COREF ID="X11">the United Auto Workers union</COREF>
+{14} {union}
+{14} {union}
+{15} {union}
+{24} {union}
+{24} {union}
+{27} {union}
+{32} {union}
+{48} {union}
+
+<COREF ID="X12">a settlement</COREF>
+{15} {settlement}
+{17} {settlement}
+{32} {settlement}
+{49} {settlement}
+
+<COREF ID="X13">UAW President Owen Bieber</COREF>
+{18} {Bieber}
+{18} {Bieber}
+{20} {Bieber}
+
+<COREF ID="X14">Tuesday</COREF>
+{19} {Tuesday}
+{19} {Tuesday}
+{25} {Tuesday}
+{26} {Tuesday}
+{33} {Monday}
+{39} {Monday}
+{48} {Monday}
+{49} {Monday}
+
+<COREF ID="X15">one source</COREF>
+{19} {source}
+{20} {source}
+{42} {sources}
+
+<COREF ID="X16">Robert White, </COREF>
+{23} {White,}
+
+<COREF ID="X17">sweetened cost-of-living adjustments for pensioners</COREF>
+{23} {pensioners}
+{23} {pensioners}
+
+<COREF ID="X18">The Canadian union</COREF>
+{14} {union}
+{14} {union}
+{15} {union}
+{24} {union}
+{24} {union}
+{27} {union}
+{32} {union}
+{48} {union}
+
+<COREF ID="X19">the main issue</COREF>
+{25} {issue}
+{28} {issues}
+{30} {issues}
+{31} {issues}
+{31} {issue}
+{41} {issue}
+{45} {issue}
+
+<COREF ID="X20">pension adjustments</COREF>
+{23} {adjustments}
+{26} {adjustments}
+{27} {adjustments}
+
+<COREF ID="X21">Chrysler Canada's chief negotiator, </COREF>
+{28} {negotiator,}
+
+<COREF ID="X22">the two sides</COREF>
+{14} {side}
+{28} {sides}
+
+<COREF ID="X23">local issues</COREF>
+{25} {issue}
+{28} {issues}
+{30} {issues}
+{31} {issues}
+{31} {issue}
+{41} {issue}
+{45} {issue}
+
+<COREF ID="X24">U.S.</COREF>
+{34} {U.S.}
+
+<COREF ID="X25">about 585 workers</COREF>
+{13} {workers}
+{13} {workers}
+{23} {Workers}
+{32} {workers}
+{32} {workers}
+{34} {workers}
+{37} {workers}
+{37} {workers}
+{38} {workers}
+{45} {workers}
+{46} {workers}
+
+<COREF ID="X26">a stamping plant near Detroit</COREF>
+{37} {Detroit}
+{37} {Detroit}
+
+<COREF ID="X27">General Motors Corp.</COREF>
+{39} {Motors}
+{39} {Corp.}
+
+<COREF ID="X28">Monday</COREF>
+{19} {Tuesday}
+{19} {Tuesday}
+{25} {Tuesday}
+{26} {Tuesday}
+{33} {Monday}
+{39} {Monday}
+{48} {Monday}
+{49} {Monday}
+
+<COREF ID="X29">the two parties</COREF>
+{41} {parties}
+
+<COREF ID="X30">the job-security issue</COREF>
+{25} {issue}
+{28} {issues}
+{30} {issues}
+{31} {issues}
+{31} {issue}
+{41} {issue}
+{45} {issue}
+
+<COREF ID="X31">the previous contract</COREF>
+{32} {contract}
+{39} {contracts}
+{43} {contract}
+{45} {contract}
+{48} {contract}
+{50} {contract}
+
+<COREF ID="X0">Trade Talks</COREF>
+{2} {Talks}
+{2} {Talks}
+{10} {talks}
+{12} {negotiations}
+{13} {negotiations}
+{14} {negotiations}
+{14} {negotiations}
+{15} {talks}
+
+<COREF ID="X1">09/29/87</COREF>
+{3} {09/29/87}
+
+<COREF ID="X2">Treasury Secretary James Baker</COREF>
+{10} {Baker}
+{10} {Baker}
+
+<COREF ID="X3">a 7 1/2-hour negotiating session</COREF>
+{10} {session}
+
+<COREF ID="X4">the two sides</COREF>
+{10} {sides}
+
+<COREF ID="X5">Pat Carney</COREF>
+{11} {Carney}
+
+<COREF ID="X6">Canada</COREF>
+{12} {Canada}
+{15} {canada}
+
+<COREF ID="X7">U.S.</COREF>
+{14} {U.S.}
+{14} {U.S.}
+{15} {U.S.}
+
