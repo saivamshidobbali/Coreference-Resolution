@@ -3,20 +3,21 @@
 {9} {mediator}
 
 <COREF ID="X1">Talks</COREF>
-{1} {Talks}
-{9} {talks}
 
 <COREF ID="X2">Big Board</COREF>
 {2} {Board}
+{9} {Board}
 {11} {Board}
 {11} {Board}
 
 <COREF ID="X3">Union</COREF>
+{8} {union}
 {12} {union}
 {13} {union}
 {13} {union}
 
 <COREF ID="X4">a Big Board spokesman</COREF>
+{9} {spokesman}
 {10} {spokesman}
 
 <COREF ID="X5">New York Futures Exchange, </COREF>

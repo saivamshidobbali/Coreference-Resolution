@@ -9,28 +9,26 @@
 {22} {F-14s}
 
 <COREF ID="X3">Bloomberg Business News</COREF>
-{9} {News}
 
 <COREF ID="X4">Navy</COREF>
-{10} {Navy}
 {12} {Navy}
+{16} {Navy}
 {16} {Navy}
 {17} {Navy}
 {20} {Navy}
 {22} {Navy}
 {26} {Navy}
+{27} {Navy}
 {30} {Navy}
 {31} {Navy}
 
 <COREF ID="X5">three days</COREF>
-{10} {days}
-{32} {days}
 
 <COREF ID="X6">Persian Gulf</COREF>
-{11} {Gulf}
 {18} {Gulf}
 
 <COREF ID="X7">a 72-hour safety standdown</COREF>
+{16} {standdown}
 {18} {standdown}
 
 <COREF ID="X8">Lt. Greg Geisen</COREF>
@@ -40,6 +38,8 @@
 {32} {Geisen}
 
 <COREF ID="X9">the F-14</COREF>
+{16} {F-14}
+{17} {F-14}
 {30} {F-14}
 
 <COREF ID="X10">14 F-14s on board the USS America</COREF>
@@ -55,4 +55,5 @@
 <COREF ID="X14">Grumman Corp.</COREF>
 
 <COREF ID="X15">Northrop Grumman spokesman John Vosilla</COREF>
+{30} {Vosilla}
 

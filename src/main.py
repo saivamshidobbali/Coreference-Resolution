@@ -133,10 +133,10 @@ def process(filename):
 
         print("pos_tagged" , pos_tagged)	
 
-        #grammar = r"""
-        #  NP: {<DT|PP\$>?<JJ>*<NN>}   # chunk determiner/possessive, adjectives and noun
-        #      {<NNP>+}                # chunk sequences of proper nouns
-        #"""
+        grammar = r"""
+          NP: {<DT|PP\$>?<JJ>*<NN>}   # chunk determiner/possessive, adjectives and noun
+              {<NNP>+}                # chunk sequences of proper nouns
+        """
         
         cp = nltk.RegexpParser(grammar)
         parse_tree = cp.parse(pos_tagged)

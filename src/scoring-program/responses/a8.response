@@ -4,51 +4,69 @@
 
 <COREF ID="X1">FLIGHTS</COREF>
 {13} {flight}
+{16} {flight}
+{20} {flight}
+{25} {flight}
+{27} {flight}
+{29} {flight}
 
 <COREF ID="X2">02-14</COREF>
 
 <COREF ID="X3">FAA</COREF>
 {12} {FAA}
+{19} {FAA}
 
 <COREF ID="X4">NUMBER OF FLIGHTS</COREF>
 {13} {flight}
+{16} {flight}
+{20} {flight}
+{25} {flight}
+{27} {flight}
+{29} {flight}
 
 <COREF ID="X5">PLUTONIUM</COREF>
 {11} {plutonium}
+{14} {plutonium}
 {15} {Plutonium}
 {20} {plutonium}
+{22} {plutonium}
+{25} {plutonium}
+{31} {plutonium}
 
 <COREF ID="X6">1996</COREF>
 
 <COREF ID="X7">Amarillo</COREF>
 {17} {Amarillo}
+{23} {Amarillo}
 {29} {Amarillo}
 
 <COREF ID="X8">Texas</COREF>
 {24} {Texas}
 
 <COREF ID="X9">Energy Department</COREF>
-{11} {Department}
 {21} {Department}
 
 <COREF ID="X10">each flight</COREF>
 {13} {flight}
+{16} {flight}
+{20} {flight}
+{25} {flight}
+{27} {flight}
+{29} {flight}
 
 <COREF ID="X11">Amarillo International Airport</COREF>
 {17} {airport}
+{23} {airport}
+{25} {airport}
 {27} {airport}
 {29} {Airport}
 
 <COREF ID="X12">military training planes</COREF>
-{18} {planes}
-{20} {planes}
-{24} {planes}
-{26} {planes}
-{31} {planes}
+{14} {plane}
 {32} {plane}
 
 <COREF ID="X13">Defense Nuclear Facilities Safety Board</COREF>
-{13} {Board}
+{16} {board}
 
 <COREF ID="X14">The risk of that scenario</COREF>
 {16} {scenario}
@@ -71,15 +89,16 @@
 
 <COREF ID="X18">the previous aircraft count</COREF>
 {19} {count}
+{19} {count}
 
 <COREF ID="X19">air traffic controllers</COREF>
-{26} {controllers}
 
 <COREF ID="X20">flight patterns</COREF>
 {25} {pattern}
 
 <COREF ID="X21">About half the aircraft</COREF>
 {11} {aircraft}
+{19} {aircraft}
 {24} {aircraft}
 
 <COREF ID="X22">Oklahoma</COREF>
@@ -87,14 +106,14 @@
 
 <COREF ID="X23">plutonium storage bunkers</COREF>
 {14} {bunker}
-{20} {bunkers}
-{25} {bunkers}
-{26} {bunkers}
 
 <COREF ID="X24">sophisticated equipment</COREF>
 
 <COREF ID="X25">some military traffic</COREF>
+{19} {traffic}
+{19} {traffic}
 {25} {traffic}
+{26} {traffic}
 
 <COREF ID="X26">They</COREF>
 

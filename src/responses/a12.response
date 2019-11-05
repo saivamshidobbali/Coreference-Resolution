@@ -17,16 +17,23 @@
 {14} {investigation}
 
 <COREF ID="X5">SEATTLE</COREF>
+{9} {Seattle}
 {10} {Seattle}
 
 <COREF ID="X6">Seattle's Museum of Flight</COREF>
 {10} {Flight}
 {12} {Flight}
+{17} {flight}
+{18} {flight}
+{19} {flight}
+{20} {Flight}
 
 <COREF ID="X7">a similar jetliner</COREF>
 {13} {jet}
 
 <COREF ID="X8">Pittsburgh</COREF>
+{12} {Pittsburgh}
+{19} {Pittsburgh}
 
 <COREF ID="X9">the plane's rudder</COREF>
 {12} {rudder}
@@ -35,8 +42,6 @@
 {18} {rudder}
 
 <COREF ID="X10">Aviation safety investigators</COREF>
-{15} {investigators}
-{18} {investigators}
 
 <COREF ID="X11">the rudder</COREF>
 {12} {rudder}
@@ -48,23 +53,18 @@
 {14} {Hall}
 
 <COREF ID="X13">board spokesman Mike Benson</COREF>
+{14} {Benson}
 {15} {Benson}
 {18} {Benson}
 {25} {Benson}
 
 <COREF ID="X14">Newer models of flight data recorders</COREF>
-{17} {recorders}
-{18} {recorders}
-{19} {recorders}
 
 <COREF ID="X15">the angle of the rudder and the pedal controlling it</COREF>
 
 <COREF ID="X16">tests</COREF>
-{21} {tests}
-{22} {tests}
-{23} {tests}
-{24} {tests}
 
 <COREF ID="X17">last September</COREF>
+{20} {September}
 {24} {September}
 
