@@ -1,5 +1,5 @@
-./data/a10.input
 ./data/a11.input
+./data/a10.input
 ./data/a12.input
 ./data/a8.input
 ./data/a9.input

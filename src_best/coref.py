@@ -1,98 +1,157 @@
 import sys
 import nltk
 import re
-import pprint
 import xml.etree.ElementTree as ET
-from lib.stat_parser import Parser, display_tree
-from nltk.corpus import wordnet as wn
+from nltk.corpus import wordnet
 import copy
 from nltk import Tree
 import os
-
-from difflib import SequenceMatcher as editDifference
-from nltk.corpus import conll2000
-from nltk.chunk import conlltags2tree, tree2conlltags
+from difflib import SequenceMatcher
 from nltk.chunk import ne_chunk
 from nltk import pos_tag
+
+nltk.download('punkt')
+nltk.download('maxent_ne_chunker')
+nltk.download('words')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('names')
+
+RESPONSE_DIR = "./responses"
 
 
 def find_coref(anaphor, named_entity_resolution_list, sent_num, np_list_copy):
     ans = []
-    #anaphor = copy.deepcopy(named_entity_resolution_list[anaphor_idx])
     anaphor_indices = range(0,len(named_entity_resolution_list))
-    
+
     for idx  in anaphor_indices:
         coref = copy.deepcopy(named_entity_resolution_list[idx])    
                 
         if anaphor['label'] is not None and anaphor['label'] == coref['label']:
-            if editDifference(None, anaphor['text'], coref['text']).ratio() > 0.80:
+            if SequenceMatcher(None, anaphor['text'], coref['text']).ratio() > 0.99:
                 ans.append(str(sent_num[idx])+" "+np_list_copy[idx])
 
-                named_entity_resolution_list[idx]['label'] = "bullshit"
-                named_entity_resolution_list[idx]['text'] = "bullshit"
+                named_entity_resolution_list[idx]['label'] = "None"
+                named_entity_resolution_list[idx]['text'] = "None"
                 continue
                 
                 
         if anaphor['text'] == coref['text'] or anaphor['text'].split()[-1] == coref['text'].split()[-1]:
-                ans.append(str(sent_num[idx])+" "+np_list_copy[idx])
 
-                named_entity_resolution_list[idx]['label'] = "bullshit"
-                named_entity_resolution_list[idx]['text'] = "bullshit"
+                ans.append(str(sent_num[idx])+" "+np_list_copy[idx])
+                named_entity_resolution_list[idx]['label'] = "None"
+                named_entity_resolution_list[idx]['text'] = "None"
                 continue
 
 
-        elif editDifference(None, anaphor['text'], coref['text']).ratio() > 0.80:
+        elif SequenceMatcher(None, anaphor['text'], coref['text']).ratio() > 0.99:
+
                 ans.append(str(sent_num[idx])+" "+np_list_copy[idx])
 
-                named_entity_resolution_list[idx]['label'] = "bullshit"
-                named_entity_resolution_list[idx]['text'] = "bullshit"
+                named_entity_resolution_list[idx]['label'] = "None"
+                named_entity_resolution_list[idx]['text'] = "None"
                 continue
 
 
-        w1 = wn.synsets(anaphor['text'].split()[-1], pos=wn.NOUN)
-        w2 = wn.synsets(coref['text'].split()[-1], pos=wn.NOUN)
+        w1 = wordnet.synsets(anaphor['text'].split()[-1], pos=wordnet.NOUN)
+        w2 = wordnet.synsets(coref['text'].split()[-1], pos=wordnet.NOUN)
         if w1 and w2:
-                 if(w1[0].wup_similarity(w2[0])) > 0.85:
+                 if(w1[0].wup_similarity(w2[0])) > 0.95:
                     ans.append(str(sent_num[idx])+" "+np_list_copy[idx])
 
-                    named_entity_resolution_list[idx]['label'] = "bullshit"
-                    named_entity_resolution_list[idx]['text'] = "bullshit"
+                    named_entity_resolution_list[idx]['label'] = "None"
+                    named_entity_resolution_list[idx]['text'] = "None"
     return ans
 
-def extract_entity_names(t):
-    entity_names = []
+def get_ner_names(t):
+    ner_names = []
+    if hasattr(t,'label') and t.label:
+       if t.label() == 'S':
+            for st in t:
+                new_list=[]
+                new_list = get_ner_names(st)	
+                len_st = len(new_list)
+                for index in range(0,len_st):
+                    ner_names.append(new_list[index])	
+       else:
+            ner_names.append(' '.join([st[0] for st in t]))
 
-    if hasattr(t, 'label') and t.label:
-        if t.label() != 'S':
-            entity_names.append(' '.join([child[0] for child in t]))
+    return ner_names
+
+
+def get_ner_labels(t):
+    ner_labels = []
+
+    if hasattr(t,'label')  and  t.label :
+        if t.label() == 'S':
+            for st in t:
+                new_list=[]
+                new_list = get_ner_labels(st)	
+                len_st = len(new_list)
+                for index in range(0,len_st):
+                    ner_labels.append(new_list[index])	
         else:
-            for child in t:
-                entity_names.extend(extract_entity_names(child))
-
-    return entity_names
+           ner_labels.append(' '.join(t.label()))
 
 
-def extract_entity_labels(t):
-    entity_names = []
-
-    if hasattr(t, 'label') and t.label:
-        if t.label() != 'S':
-            entity_names.append(' '.join(t.label()))
-        else:
-            for child in t:
-                entity_names.extend(extract_entity_labels(child))
-
-    return entity_names
+    return ner_labels
 
 
 
 def main():
+     global RESPONSE_DIR
+
+     if len(sys.argv) == 3:
+       RESPONSE_DIR = sys.argv[2]
+       filelist = [ f for f in os.listdir(sys.argv[2])]
+     else:
+       filelist = [ f for f in os.listdir(RESPONSE_DIR)]
+       
+     for f in filelist:
+         os.remove(os.path.join(RESPONSE_DIR, f))
+   
+
+
      f = open(sys.argv[1],"r")
      filenames = f.readlines()
 
-     for file in filenames:    
+     for file in filenames:
         process(file.rstrip('\n'))
-    
+
+def hobbs_resolution(pronouns_list, sentence_parse_dict):
+    for index,pronoun in enumerate(pronouns_list):
+        
+   
+def pronouns(content):
+    grammar = "NP: {<DT>?<JJ.*>*<NN.*>+}"
+    pronouns_list = []
+    sent_num_for_pronouns = []
+
+    temp_sentence_parse_list = []
+    sentence_parse_dict = {}
+    pronoun_count = -1
+
+    for sentence in content:
+
+        xml_data = ET.fromstring(sentence)
+        pure_text = ET.tostring(xml_data, encoding='utf8', method='text')
+        wordlist = nltk.word_tokenize(pure_text)
+        pos_tagged  =  nltk.pos_tag(wordlist)
+
+        cp = nltk.RegexpParser(grammar)
+        parse_tree = cp.parse(pos_tagged)
+
+        temp_sentence_parse_list.append(parse_tree)
+
+        for (a,b) in pos_tagged:
+              if b == 'PRP':
+                  pronoun_count += 1
+                  pronouns_list.append(a)
+                  sentence_parse_dict[pronoun_count] = temp_sentence_parse_list
+
+                  sent_num_for_pronouns.append(xml_data.attrib['ID'])
+     
+    return (sentence_parse_dict, pronouns_list, sent_num_for_pronouns)
     
 def process(filename):    
     grammar = "NP: {<DT>?<JJ.*>*<NN.*>+}"
@@ -100,7 +159,7 @@ def process(filename):
    
     np_coref_list = []
     ner_sentences = []
-    parser = Parser()
+
 
     with open(filename) as f:
          content = f.readlines()
@@ -115,35 +174,42 @@ def process(filename):
 
     sent_num = []
     parse_tree=""
+    sent_num_for_pronouns = []
+    sentence_parse_dict = []
 
+    sentence_parse_dict, pronouns_list, sent_num_for_pronouns = pronouns(content)
+
+    hobbs_resolution(pronouns_list, sentence_parse_dict):
+    #print(sentence_parse_dict)
+  
     for sentence in content:
         xml_data = ET.fromstring(sentence)
         pure_text = ET.tostring(xml_data, encoding='utf8', method='text')
-        print(pure_text)
-        
-        try:
-            parse_tree = parser.parse(str(pure_text))
-        except:
-            print("error")
-            continue
-   
+        wordlist = nltk.word_tokenize(pure_text)
+        pos_tagged  =  nltk.pos_tag(wordlist)
+        cp = nltk.RegexpParser(grammar)
+        parse_tree = cp.parse(pos_tagged)
+     
 
         for node in parse_tree.subtrees(filter=lambda t: t.height() < 4 and (t.label() == 'NP')):
-            
-            constituents = [constituent for constituent in node.flatten()]
-            np_list.append(" ".join(constituents))
+            x = ""
+            for i,elem in enumerate(node):
+                 if i == 0:
+                    x = elem[0]
+                 else:
+                    x = x +" "+elem[0]
+            np_list.append(x)
             sent_num.append(xml_data.attrib['ID'])
        
-         
         for child in xml_data:
             if child.text in np_list:
                  index = np_list.index(child.text)
                  del np_list[index]
                  del sent_num[-1]
-        
+    
     for np in np_list:
-        name =  extract_entity_names(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
-        label  = extract_entity_labels(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
+        name =  get_ner_names(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
+        label  = get_ner_labels(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
 
         if name:
             namedEntity = label[-1]
@@ -156,8 +222,8 @@ def process(filename):
         
     ner_coref_sentences = []
     for np in np_coref_list:
-        name =  extract_entity_names(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
-        label  = extract_entity_labels(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
+        name =  get_ner_names(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
+        label  = get_ner_labels(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
 
         if name:
             namedEntity = label[-1]
@@ -167,45 +233,34 @@ def process(filename):
         ner_coref_sentences.append({"text": np.lower(),
                                "NE" : [x.lower() for x in name],
                               "label": namedEntity})
-        
+    
     np_list_copy = list(np_list)
     np_coref_list_copy = list(np_coref_list)
-    
-    np_list = [x.lower() for x in np_list]
     np_coref_list = [x.lower() for x in np_coref_list]
-   
-    filename = os.path.basename(filename) 
-    filename = "./responses/"+ filename.split('.')[0]+".response"
-    print(filename)
+    np_list = [x.lower() for x in np_list]
+    
+    filename = os.path.basename(filename)
+    filename = RESPONSE_DIR+"/"+ filename.split('.')[0]+".response"
     file = open(filename,"a+")
+
+    #hobbs_resolution(pronouns_list, parse_tree_list)
     
     for anaphor_idx, anaphor in enumerate(np_coref_list):
-
             file.writelines("<COREF ID=\""+ coref_id_list[anaphor_idx]+"\">"+ np_coref_list_copy[anaphor_idx]+ "</COREF>")
             file.writelines("\n")
                        
-            #index = np_list.index(anaphor)
-           
-            
-            temp = []
-            for elem in ner_sentences:
-                temp.append(copy.deepcopy(elem))
-            
-            
             for elem in ner_coref_sentences:
                  if elem['text'] == anaphor:
                        anaphor_ner = elem
                        break             
                 
-            ans = find_coref(anaphor_ner, temp, sent_num, np_list_copy)
+            ans = find_coref(anaphor_ner, ner_sentences, sent_num, np_list_copy)
             if ans != None:
                 for elem in ans:
                     elem = elem.split()
-                    #print_data = "{"+elem[0]+"} "+"{"+" ".join(elem[1:])+"}"
                     print_data ="{"+elem[0]+"} "+"{"+elem[-1]+"}"
                     file.writelines(print_data)
                     file.writelines("\n")
               
             file.writelines("\n")
-    
 main()

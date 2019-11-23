@@ -25,6 +25,9 @@ def find_coref(anaphor, named_entity_resolution_list, sent_num, np_list_copy):
         coref = copy.deepcopy(named_entity_resolution_list[idx])    
                 
         if anaphor['label'] is not None and anaphor['label'] == coref['label']:
+            print(anaphor['label'])
+            print(anaphor['text'])
+
             if editDifference(None, anaphor['text'], coref['text']).ratio() > 1.25:
                 ans.append(str(sent_num[idx])+" "+np_list_copy[idx])
 
@@ -85,57 +88,25 @@ def extract_entity_labels(t):
 
     return entity_names
 
+def read_list_of_files():
 
-
-def main():
-     global RESPONSE_DIR
-
-     if len(sys.argv) == 3:
-       RESPONSE_DIR = sys.argv[2]
-       filelist = [ f for f in os.listdir(sys.argv[2])]
-     else:
-       filelist = [ f for f in os.listdir(RESPONSE_DIR)]
-       
+     filelist = [ f for f in os.listdir(RESPONSE_DIR)]
      for f in filelist:
          os.remove(os.path.join(RESPONSE_DIR, f))
-   
-
-     print(RESPONSE_DIR) 
+    
      f = open(sys.argv[1],"r")
      filenames = f.readlines()
 
-     for file in filenames:
-      try:
-        process(file.rstrip('\n'))
-      except:
-        continue
-    
-    
-def process(filename):    
-    grammar = "NP: {<DT>?<JJ.*>*<NN.*>+}"
-    np_list = []
+     return filenames
    
-    np_coref_list = []
-    ner_sentences = []
-    parser = Parser()
+def create_np_list(content):
 
-    with open(filename) as f:
-         content = f.readlines()
-
-    coref_id_list = []
-    for string in content:
-     try:
-        xml_data = ET.fromstring(string)
-
-        for child in xml_data:
-            coref_id_list.append(child.attrib['ID'])
-            np_coref_list.append(child.text)
-     except:
-      continue
-
+    #Grammar used for identifying NPs.
+    grammar = "NP: {<DT>?<JJ.*>*<NN.*>+}"
+    parse_tree = ""
     sent_num = []
-    parse_tree=""
-    
+    np_list = []
+    # create NP List.
     for sentence in content:
      try:
         xml_data = ET.fromstring(sentence)
@@ -153,9 +124,7 @@ def process(filename):
         parse_tree = cp.parse(pos_tagged)
        
 
-        before_length = len(np_list)
         for node in parse_tree.subtrees(filter=lambda t: t.height() < 4 and (t.label() == 'NP')):
-         try:
             x = ""
             for i,elem in enumerate(node):
                  if i == 0:
@@ -164,22 +133,21 @@ def process(filename):
                     x = x +" "+elem[0]
             np_list.append(x)
             sent_num.append(xml_data.attrib['ID'])
-         except:
-           continue
        
         for child in xml_data:
-         try:
             if child.text in np_list:
                  index = np_list.index(child.text)
                  del np_list[index]
                  del sent_num[-1]
-         except:
-           continue
-     except:
-           continue
-    
+       except:
+        continue
+    return np_list , sent_num 
+        
+def ner_for_all_nps(np_list, np_coref_list):
+    ner_sentences = []
+    # Perform NER for All NPs        
     for np in np_list:
-      try:
+     try:  
         name =  extract_entity_names(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
         label  = extract_entity_labels(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
 
@@ -191,12 +159,13 @@ def process(filename):
         ner_sentences.append({"text": np.lower(),
                                "NE" : [x.lower() for x in name],
                               "label": namedEntity})
-      except:
+     except:
         continue
-        
+
     ner_coref_sentences = []
+    # Perform NER for coref tagged phrases in input
     for np in np_coref_list:
-     try:
+      try:
         name =  extract_entity_names(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
         label  = extract_entity_labels(nltk.ne_chunk(nltk.pos_tag(nltk.word_tokenize(np))))
 
@@ -208,23 +177,59 @@ def process(filename):
         ner_coref_sentences.append({"text": np.lower(),
                                "NE" : [x.lower() for x in name],
                               "label": namedEntity})
-     except:
-      continue
+      except:
+        continue
+
+
+    return ner_sentences, ner_coref_sentences
+
+def main():
+     filenames = read_list_of_files()
+
+     for file in filenames:    
+        process(file.rstrip('\n'))
+    
+    
+def process(filename):    
+    
+    # operational Lists
+    np_list = []
+    np_coref_list = []
+    ner_sentences = []
+    parser = Parser()
+    ner_coref_sentences = []
+    sent_num = []
+
+    # open file and read its contents
+    with open(filename) as f:
+         content = f.readlines()
+
+    coref_id_list = []
+    # Read given Coref phrases in input files
+    for string in content:
+        xml_data = ET.fromstring(string)
+
+        for child in xml_data:
+            np_coref_list.append(child.text)
+            coref_id_list.append(xml_data.attrib['ID'])
+
+    np_list, sent_num = create_np_list(content)
+    ner_sentences, ner_coref_sentences = ner_for_all_nps(np_list, np_coref_list)
+        
     
     np_list_copy = list(np_list)
     np_coref_list_copy = list(np_coref_list)
-    
     np_list = [x.lower() for x in np_list]
     np_coref_list = [x.lower() for x in np_coref_list]
-   
-    filename = os.path.basename(filename)
-    print(filename)
-    filename = RESPONSE_DIR+"/"+ filename.split('.')[0]+".response"
-    print(filename)
+  
+    # open response file to write 
+    filename = os.path.basename(filename) 
+    filename = "./responses/"+ filename.split('.')[0]+".response"
     file = open(filename,"a+")
     
     for anaphor_idx, anaphor in enumerate(np_coref_list):
-     try:
+      try:
+
             file.writelines("<COREF ID=\""+ coref_id_list[anaphor_idx]+"\">"+ np_coref_list_copy[anaphor_idx]+ "</COREF>")
             file.writelines("\n")
                        
@@ -247,6 +252,8 @@ def process(filename):
                     file.writelines("\n")
               
             file.writelines("\n")
-     except:
-         continue
+      except:     
+             continue
+     
+    
 main()
