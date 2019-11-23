@@ -9,6 +9,12 @@ import os
 from difflib import SequenceMatcher
 from nltk.chunk import ne_chunk
 from nltk import pos_tag
+from hobbs import *
+
+from nltk.tree import Tree
+
+from lib.stat_parser.parser import Parser as CkyStatParser                                                                                                                                                  
+
 
 nltk.download('punkt')
 nltk.download('maxent_ne_chunker')
@@ -120,10 +126,12 @@ def main():
 
 def hobbs_resolution(pronouns_list, sentence_parse_dict):
     for index,pronoun in enumerate(pronouns_list):
+           hobbs_main(pronoun, sentence_parse_dict[index])
         
    
 def pronouns(content):
-    grammar = "NP: {<DT>?<JJ.*>*<NN.*>+}"
+
+    cky_stat_parser = CkyStatParser() 
     pronouns_list = []
     sent_num_for_pronouns = []
 
@@ -132,25 +140,28 @@ def pronouns(content):
     pronoun_count = -1
 
     for sentence in content:
-
+        
         xml_data = ET.fromstring(sentence)
         pure_text = ET.tostring(xml_data, encoding='utf8', method='text')
+
+        parse_tree = cky_stat_parser.nltk_parse(pure_text) 
         wordlist = nltk.word_tokenize(pure_text)
         pos_tagged  =  nltk.pos_tag(wordlist)
 
-        cp = nltk.RegexpParser(grammar)
-        parse_tree = cp.parse(pos_tagged)
+        #cp = nltk.RegexpParser(grammar)
+        #parse_tree = cp.parse(pos_tagged)
 
         temp_sentence_parse_list.append(parse_tree)
 
         for (a,b) in pos_tagged:
               if b == 'PRP':
+
                   pronoun_count += 1
                   pronouns_list.append(a)
+                  
                   sentence_parse_dict[pronoun_count] = temp_sentence_parse_list
-
                   sent_num_for_pronouns.append(xml_data.attrib['ID'])
-     
+
     return (sentence_parse_dict, pronouns_list, sent_num_for_pronouns)
     
 def process(filename):    
@@ -179,7 +190,7 @@ def process(filename):
 
     sentence_parse_dict, pronouns_list, sent_num_for_pronouns = pronouns(content)
 
-    hobbs_resolution(pronouns_list, sentence_parse_dict):
+    hobbs_resolution(pronouns_list, sentence_parse_dict)
     #print(sentence_parse_dict)
   
     for sentence in content:
@@ -189,8 +200,7 @@ def process(filename):
         pos_tagged  =  nltk.pos_tag(wordlist)
         cp = nltk.RegexpParser(grammar)
         parse_tree = cp.parse(pos_tagged)
-     
-
+        print("#############################################=================") 
         for node in parse_tree.subtrees(filter=lambda t: t.height() < 4 and (t.label() == 'NP')):
             x = ""
             for i,elem in enumerate(node):
