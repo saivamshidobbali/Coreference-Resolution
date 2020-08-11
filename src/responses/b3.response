@@ -19,7 +19,6 @@
 {34} {TWA}
 {35} {TWA}
 {37} {TWA}
-{38} {TWA}
 {39} {TWA}
 {42} {TWA}
 {44} {TWA}
@@ -54,22 +53,16 @@
 {24} {USAir}
 {24} {USAir}
 {24} {USAir}
-{25} {USAir}
 {26} {USAir}
 {28} {USAir}
 {28} {USAir}
 {29} {USAir}
 {30} {USAir}
 {31} {USAir}
-{34} {USAir}
 {35} {USAir}
-{37} {USAir}
-{40} {USAir}
 {41} {USAir}
 {42} {USAir}
 {42} {USAir}
-{44} {USAir}
-{44} {USAir}
 {45} {USAir}
 {47} {USAir}
 {48} {USAir}
@@ -79,11 +72,9 @@
 {53} {USAir}
 {53} {USAir}
 {54} {USAir}
-{54} {USAir}
 {55} {USAir}
 {55} {USAir}
 {56} {USAir}
-{58} {USAir}
 {58} {USAir}
 
 <COREF ID="X3">Additional Blow to Bid</COREF>
@@ -93,7 +84,6 @@
 {29} {bid}
 
 <COREF ID="X4">a temporary restraining order</COREF>
-{10} {order}
 {11} {order}
 
 <COREF ID="X5">Piedmont Aviation Inc.</COREF>
@@ -109,7 +99,7 @@
 {14} {Icahn}
 {16} {Icahn}
 {17} {Icahn}
-{22} {Icahn}
+{23} {Icahn}
 {24} {Icahn}
 {25} {Icahn}
 {25} {Icahn}
@@ -162,6 +152,7 @@
 
 <COREF ID="X15">The filings</COREF>
 {20} {filing}
+{24} {filings}
 {45} {filing}
 {50} {filing}
 
@@ -184,22 +175,16 @@
 {24} {USAir}
 {24} {USAir}
 {24} {USAir}
-{25} {USAir}
 {26} {USAir}
 {28} {USAir}
 {28} {USAir}
 {29} {USAir}
 {30} {USAir}
 {31} {USAir}
-{34} {USAir}
 {35} {USAir}
-{37} {USAir}
-{40} {USAir}
 {41} {USAir}
 {42} {USAir}
 {42} {USAir}
-{44} {USAir}
-{44} {USAir}
 {45} {USAir}
 {47} {USAir}
 {48} {USAir}
@@ -209,11 +194,9 @@
 {53} {USAir}
 {53} {USAir}
 {54} {USAir}
-{54} {USAir}
 {55} {USAir}
 {55} {USAir}
 {56} {USAir}
-{58} {USAir}
 {58} {USAir}
 
 <COREF ID="X18">TWA</COREF>
@@ -237,7 +220,6 @@
 {34} {TWA}
 {35} {TWA}
 {37} {TWA}
-{38} {TWA}
 {39} {TWA}
 {42} {TWA}
 {44} {TWA}
@@ -257,6 +239,7 @@
 
 <COREF ID="X20">its SEC filing</COREF>
 {20} {filing}
+{24} {filings}
 {45} {filing}
 {50} {filing}
 
@@ -272,15 +255,13 @@
 {12} {stock}
 {38} {stock}
 {40} {stock}
-{52} {stock}
 {53} {stock}
 {54} {stock}
 {55} {stock}
 {58} {stock}
 
 <COREF ID="X25">Hart-Scott-Rodino Act</COREF>
+{54} {Act}
 
 <COREF ID="X26">Houston-based Texas Air Corp.</COREF>
-{43} {Corp.}
-{59} {Corp.}
 
